@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const WithAuth = (WrappedComponent) => {
   const WithAuthComponent = (props) => {
     const navigate = useNavigate();
-    const token = false;
+    const token = true;
 
     useEffect(() => {
       if (!token) {
